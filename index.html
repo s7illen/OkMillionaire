@@ -1,184 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OK MILLIONAIRE</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:900|Quicksand:400,700|Trade+Winds&display=swap"
+        rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-    <style>
-
-body {
-    background: rgb(201, 169, 195);
-}
-
-.banking {
-    background: rgb(224, 189, 164);
-    font-size: 40px;
-    width: 30%;
-    float: left;
-}
-
-.news {
-    background: rgb(224, 189, 164);
-    font-size: 40px;
-    width: 30%;
-    float: left;
-}
-
-.stockMarket {
-    background: rgb(224, 189, 164);
-    font-size: 20px;
-    width: 55%;
-    margin-left: 10%;
-    float: left;
-}
-
-.netWorth{
-    background: rgb(183, 223, 206);
-    font-size: 50px;
-    width: 100%;
-    float: left;
-}
-
-button {
-    width: 300px;
-    height: 50px;
-    font-size: 30px;
-}
-
-.buyingAmount {
-    display: none;
-}
-
-    </style>
+    <link rel="stylesheet" href="style/sass/style.css">
 </head>
+
 <body>
 
-    <div class="banking">
-        <h2>Banks</h2>
-        <div class="interest">annual interest rate 2.633%</div>
-        <div class="amount">$1000000</div>
-    </div>
+    <main class="wrapper">
 
-    <div class="news">
-        <div class="newsHeadline">Headline News</div>
-        <h3></h3>
-        <p></p>
-    </div>
+        <section class="gameTitle">
+            <h1>OK MILLIONAIRE</h1>
+        </section>
 
-    <div class="stockMarket">
-        <h2>Stock Market</h2>
-            <div class="amount"></div>
-            <div class="stockChange"></div>
-            <div class="stockChangePre"></div>
-        <ul>
-            <li class="amazon st0">
-                <div class='stockName'>Amazon</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
+        <section class="mainGrid">
+
+            <div class="news">
+                <div class="newsHeadline">Headline News</div>
+                <h3></h3>
+            </div>
+
+            <div class="banking">
+                <h2>Banks</h2>
+                <p>Interest Rate</p>
+                <div class="interest">2.633%</div>
+                <p>Your Account Balance:</p>
+                <div class="amount">$1000000</div>
+            </div>
+
+            <div class="stockMarket">
+                <div class="stockMartetGrid">
+                    <div class="stockHeader">
+                        <h2>Stock Market</h2>
+                        <div class="amount"></div>
+                        <div class="stockChange"></div>
+                        <div class="stockChangePre"></div>
+                    </div>
+                    <ul class="stockList">
+                        <li class="amazon st0">
+                            <div class='stockName'>Amazon</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <input type="range" min="0" max="150" value="0">
+                                <p class='buyingAmount'></p>
+                            </div>
+                        </li>
+                        <li class="apple st1">
+                            <div class='stockName'>Apple</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+
+                        <li class="boeing st2">
+                            <div class='stockName'>Boeing</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+
+                        <li class="costco st3">
+                            <div class='stockName'>Costco</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+
+                        <li class="exxon st4">
+                            <div class='stockName'>Exxon</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+
+                        <li class="nike st5">
+                            <div class='stockName'>Nike</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+
+                        <li class="tesla st6">
+                            <div class='stockName'>Tesla</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+
+                        <li class="toyota st7">
+                            <div class='stockName'>Toyota</div>
+                            <div class='change'></div>
+                            <div class='yearlyChange'></div>
+                            <div class='stockPosition'></div>
+                            <div class='buySell'>
+                                <p class='buyingAmount'></p>
+                                <input type="range" min="0" max="150" value="0">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </li>
-            <li class="apple st1">
-                <div class='stockName'>Apple</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-            <li class="boeing st2">
-                <div class='stockName'>Boeing</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-            <li class="costco st3">
-                <div class='stockName'>Costco</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-            <li class="exxon st4">
-                <div class='stockName'>Exxon</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-            <li class="nike st5">
-                <div class='stockName'>Nike</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-            <li class="tesla st6">
-                <div class='stockName'>Tesla</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-            <li class="toyota st7">
-                <div class='stockName'>Toyota</div>
-                <div class='change'></div>
-                <div class='yearlyChange'></div>
-                <div class='stockPosition'></div>
-                <div class='buySell'>
-                    <p class='buyingAmount'></p>
-                    <input type="range" min="0" max="150" value="0">
-                </div>
-            </li>
-
-        </ul>
-
-        <button class="stockSubmit">Submit</button>
+                <button class="stockSubmit">Submit</button>
 
 
-    </div>
+            </div>
 
-    <div class="netWorth">
-        <h2>Net Worth</h2>
-        <div class="netWorthAmount">1000000</div>
-        <button class="next">Next</button>
-        <div class="gameTime"></div>
-    </div>
-    
+        </section>
 
+        <div class="netWorth">
+            <h2>Net Worth</h2>
+            <div class="netWorthAmount">1000000</div>
+            <button class="next">Next</button>
+            <div class="gameTime"></div>
+        </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="javascript/project3.js"></script>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript/project3.js"></script>
 
 </body>
+
 </html>
