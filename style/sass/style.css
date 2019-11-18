@@ -1,0 +1,2344 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #c2e8ce;
+  background-image: url("../../image/backgroundElement.png");
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+.gameTitle {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameTitle h1 {
+  font-family: 'Trade Winds', cursive;
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #85411d;
+  text-shadow: 0 1px #f6da63, -1px 0 #f6ad7b, -1px 2px #f6da63, -2px 1px #f6ad7b, -2px 3px #f6da63, -3px 2px #f6ad7b, -3px 4px #f6da63, -4px 3px #f6ad7b, -4px 5px #f6da63, -5px 4px #f6ad7b, -5px 6px #f6da63, -6px 5px #f6ad7b, -6px 7px #f6da63, -7px 6px #f6ad7b;
+}
+
+.mainGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.news {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  background: #f2eee5;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.news .newsHeadline {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #be7575;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media (max-width: 700px) {
+  .news .newsHeadline {
+    font-size: 2rem;
+  }
+}
+
+.news h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #5f6769;
+  margin: 0;
+  padding: 0 10px;
+}
+
+@media (max-width: 700px) {
+  .news h3 {
+    font-size: 2rem;
+  }
+}
+
+.banking {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+  background: #f2eee5;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banking h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #be7575;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .banking h2 {
+    font-size: 2rem;
+  }
+}
+
+.banking p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .banking p {
+    font-size: 1.2rem;
+  }
+}
+
+.banking .interest {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f6da63;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  margin: 0;
+}
+
+.banking .amount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f6da63;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  margin: 0;
+}
+
+.stockMarket {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: #f2eee5;
+  border-radius: 15px;
+}
+
+.stockMarket .stockHeader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 1.5fr (1fr)[2];
+      grid-template-columns: 2.5fr 1.5fr repeat(2, 1fr);
+  -ms-grid-rows: 20px 45px;
+      grid-template-rows: 20px 45px;
+}
+
+.stockMarket .stockHeader h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #be7575;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 3 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .stockMarket .stockHeader h2 {
+    font-size: 2rem;
+  }
+}
+
+.stockMarket .stockHeader .amount {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+  color: #f6da63;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .stockMarket .stockHeader .amount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockMarket .stockHeader .stockAcc {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #5f6769;
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -5px;
+}
+
+.stockMarket .stockHeader .stockChange {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .stockMarket .stockHeader .stockChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockMarket .stockHeader .portCha {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 3 / 2 / 5;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #5f6769;
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -5px;
+}
+
+.stockMarket .stockHeader .stockChangePre {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / 3 / 5;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .stockMarket .stockHeader .stockChangePre {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+  margin: 0;
+  border-top: lightgray solid 1px;
+}
+
+.stockList .tag {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  background: #b6b5b5;
+}
+
+.stockList .tag .tagName {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .stockList .tag .tagName {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .tag .tagCha {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .stockList .tag .tagCha {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .tag .tagChaY {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .stockList .tag .tagChaY {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .tag .tagPo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .stockList .tag .tagPo {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .tag .tagBuy {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .stockList .tag .tagBuy {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .amazon {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 2 / 1 / 3 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .amazon .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .amazon .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .amazon .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .amazon .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .amazon .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .amazon .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .amazon .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .amazon .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .amazon .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .amazon .buySell input {
+  width: 50%;
+}
+
+.stockList .amazon .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .amazon .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .apple {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 3 / 1 / 4 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .apple .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .apple .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .apple .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .apple .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .apple .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .apple .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .apple .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .apple .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .apple .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .apple .buySell input {
+  width: 50%;
+}
+
+.stockList .apple .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .apple .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .boeing {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 4 / 1 / 5 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .boeing .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .boeing .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .boeing .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .boeing .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .boeing .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .boeing .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .boeing .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .boeing .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .boeing .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .boeing .buySell input {
+  width: 50%;
+}
+
+.stockList .boeing .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .boeing .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .costco {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 5 / 1 / 6 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .costco .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .costco .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .costco .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .costco .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .costco .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .costco .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .costco .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .costco .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .costco .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .costco .buySell input {
+  width: 50%;
+}
+
+.stockList .costco .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .costco .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .exxon {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 6 / 1 / 7 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .exxon .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .exxon .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .exxon .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .exxon .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .exxon .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .exxon .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .exxon .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .exxon .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .exxon .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .exxon .buySell input {
+  width: 50%;
+}
+
+.stockList .exxon .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .exxon .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .nike {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 7 / 1 / 8 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .nike .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .nike .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .nike .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .nike .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .nike .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .nike .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .nike .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .nike .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .nike .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .nike .buySell input {
+  width: 50%;
+}
+
+.stockList .nike .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .nike .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .tesla {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 8 / 1 / 9 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .tesla .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .tesla .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .tesla .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .tesla .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .tesla .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .tesla .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .tesla .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .tesla .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .tesla .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .tesla .buySell input {
+  width: 50%;
+}
+
+.stockList .tesla .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .tesla .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .toyota {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 9 / 1 / 10 / 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr (1fr)[2] 1.5fr 2fr 1.5fr;
+      grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.stockList .toyota .stockName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@media (max-width: 700px) {
+  .stockList .toyota .stockName {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .toyota .change {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (max-width: 700px) {
+  .stockList .toyota .change {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .toyota .yearlyChange {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 700px) {
+  .stockList .toyota .yearlyChange {
+    font-size: 1.2rem;
+  }
+}
+
+.stockList .toyota .stockPosition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .toyota .stockPosition {
+    font-size: 1.1rem;
+  }
+}
+
+.stockList .toyota .buySell {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 5 / 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stockList .toyota .buySell input {
+  width: 50%;
+}
+
+.stockList .toyota .buySell .buyingAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #f2eee5;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  text-align: center;
+  margin: 1.5px;
+}
+
+@media (max-width: 700px) {
+  .stockList .toyota .buySell .buyingAmount {
+    font-size: 1.1rem;
+  }
+}
+
+.buyStock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+}
+
+.buyStock .stockSubmit {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #be7575;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  background-color: #f6ad7b;
+  border: 3px solid #f6ad7b;
+  color: white;
+  border-radius: 10px;
+  height: auto;
+  width: inherit;
+  text-shadow: 0px 2px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 0px 6px #4d4d4d;
+          box-shadow: 0px 6px #4d4d4d;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .buyStock .stockSubmit {
+    font-size: 2rem;
+  }
+}
+
+.buyStock .stockSubmit:active {
+  text-shadow: 0px 2px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 0px 0px #4d4d4d;
+          box-shadow: 0px 0px #4d4d4d;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.buyStock .stockSubmit:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.netWorth {
+  background: #f2eee5;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.netWorth .netWorthFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+.netWorth .netWorthFlex h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #be7575;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 4.5rem;
+  padding-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .netWorth .netWorthFlex h2 {
+    font-size: 2rem;
+  }
+}
+
+.netWorth .netWorthFlex .netWorthAmount {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f6da63;
+  padding: 5px;
+  border-radius: 5px;
+  background: #be7575;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.netWorth .netWorthFlex .next {
+  background-color: #f6ad7b;
+  border: 3px solid #f6ad7b;
+  color: white;
+  border-radius: 10px;
+  height: auto;
+  width: inherit;
+  text-shadow: 0px 2px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 0px 6px #4d4d4d;
+          box-shadow: 0px 6px #4d4d4d;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #be7575;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: white;
+  width: 30%;
+}
+
+@media (max-width: 700px) {
+  .netWorth .netWorthFlex .next {
+    font-size: 2rem;
+  }
+}
+
+.netWorth .netWorthFlex .next:active {
+  text-shadow: 0px 2px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 0px 0px #4d4d4d;
+          box-shadow: 0px 0px #4d4d4d;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.netWorth .netWorthFlex .next:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.netWorth .netWorthFlex .gameTime {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #f6ad7b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  padding-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .netWorth .netWorthFlex .gameTime {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .mainGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+  }
+  .mainGrid .news {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .mainGrid .banking {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+    width: 55%;
+    margin: 0 auto;
+  }
+  .mainGrid .stockMarket {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .news h3 {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+  }
+  .stockMarket .stockHeader {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 80px 20px 45px;
+        grid-template-rows: 80px 20px 45px;
+  }
+  .stockMarket .stockHeader h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  .stockMarket .stockHeader .amount {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 3 / 1 / 4 / 3;
+    min-width: 50%;
+    margin: 5px auto;
+  }
+  .stockMarket .stockHeader .stockAcc {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .stockMarket .stockHeader .stockChange {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .stockMarket .stockHeader .portCha {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 3 / 3 / 5;
+  }
+  .stockMarket .stockHeader .stockChangePre {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 4 / 4 / 5;
+  }
+  .netWorth .netWorthFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: auto;
+    padding: 20px 0;
+  }
+  .netWorth .netWorthFlex h2 {
+    font-size: 3rem;
+  }
+  .netWorth .netWorthFlex .netWorthAmount {
+    font-size: 2.5rem;
+  }
+  .netWorth .netWorthFlex .gameTime {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .gameTitle h1 {
+    font-size: 3rem;
+  }
+  .mainGrid .banking {
+    width: 100%;
+  }
+  .stockMarket .stockHeader .amount {
+    font-size: 1.5rem;
+  }
+  .netWorth .netWorthFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .netWorth .netWorthFlex h2, .netWorth .netWorthFlex .netWorthAmount, .netWorth .netWorthFlex .gameTime {
+    margin-bottom: 20px;
+  }
+  .netWorth .netWorthFlex .next {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

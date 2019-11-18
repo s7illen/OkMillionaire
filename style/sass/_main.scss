@@ -1,0 +1,355 @@
+.gameTitle {
+    width: 100%;
+    height: 15vh;
+    @include flexer;
+    h1 {
+        @include title;
+        text-align: center; 
+        color: #85411d;
+        text-shadow:
+        0 1px $yellow,
+        -1px 0 $orange,
+        -1px 2px $yellow,
+        -2px 1px $orange,
+        -2px 3px $yellow,
+        -3px 2px $orange,
+        -3px 4px $yellow,
+        -4px 3px $orange,
+        -4px 5px $yellow,
+        -5px 4px $orange,
+        -5px 6px $yellow,
+        -6px 5px $orange,
+        -6px 7px $yellow,
+        -7px 6px $orange,
+        }
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+}
+
+.news {
+    grid-area: 1 / 1 / 2 / 2;
+    background: $beige;
+    border-radius: 15px;
+    width: 100%;
+    .newsHeadline {
+        @include heading-1;
+        padding: 5px 0;
+    }
+    h3 {
+        @include newsText;
+        padding: 0 10px;
+    }
+}
+
+.banking {
+    grid-area: 2 / 1 / 3 / 2;
+    background: $beige;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        @include heading-1;
+    }
+    p{
+        @include heading-2;
+        margin-top:5px;
+    }
+    .interest {
+        @include number-1;
+    }
+    .amount {
+        @include number-1;
+    }
+}
+
+.stockMarket {
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: $beige;
+    border-radius: 15px;
+    .stockHeader {
+        display: grid;
+        grid-template-columns: 2.5fr 1.5fr repeat(2, 1fr);
+        grid-template-rows: 20px 45px; 
+        h2 {
+            @include heading-1;
+            padding: 5px 0;
+            grid-area: 1 / 1 / 3 / 2;
+            @include flexer;
+        }
+        .amount {
+            grid-area: 2 / 2 / 3 / 3;
+            @include number-2;
+            @include flexer;
+            margin: 5px;
+            color: $yellow;
+            font-weight: 700;
+        }
+        .stockAcc{
+            grid-area: 1 / 2 / 2 / 3; 
+            @include text-2;
+            @include flexer;
+            margin-bottom: -5px;
+        }
+        .stockChange{
+            grid-area: 2 / 3 / 3 / 4;
+            @include number-3;
+            @include flexer;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .portCha{
+            grid-area: 1 / 3 / 2 / 5;
+            @include text-2;
+            @include flexer;
+            margin-bottom: -5px;
+        }
+        .stockChangePre{
+            grid-area: 2 / 4 / 3 / 5; 
+            @include number-3;
+            @include flexer;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.stockList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    margin: 0;
+    border-top: lightgray solid 1px;
+    .tag {
+        display: grid;
+        grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr 2fr 1.5fr;
+        grid-template-rows: 1fr;
+        background: rgb(182, 181, 181);
+        .tagName{
+            grid-area: 1 / 1 / 2 / 2;
+            @include text-1;
+            @include flexer;
+        }
+        .tagCha{
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1rem;
+            @include text-1;
+            @include flexer;
+        }
+        .tagChaY{
+            grid-area: 1 / 3 / 2 / 4;
+            font-size: 1rem;
+            @include text-1;
+            @include flexer;
+        }
+        .tagPo{
+            grid-area: 1 / 4 / 2 / 5;
+            @include text-1;
+            @include flexer;
+        }
+        .tagBuy{
+            grid-area:  1 / 5 / 2 / 7;
+            @include text-1;
+            @include flexer;
+        }
+    }
+    .amazon {
+        grid-area: 2 / 1 / 3 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .apple {
+        grid-area: 3 / 1 / 4 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .boeing {
+        grid-area: 4 / 1 / 5 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .costco {
+        grid-area: 5 / 1 / 6 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .exxon {
+        grid-area: 6 / 1 / 7 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .nike {
+        grid-area: 7 / 1 / 8 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .tesla {
+        grid-area: 8 / 1 / 9 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+    .toyota {
+        grid-area: 9 / 1 / 10 / 7; 
+        @include eachStockGrid;
+        @include eachStockElement;
+    }
+} 
+
+.buyStock {
+    @include flexer;
+    margin: 15px 0;
+    .stockSubmit {
+        @include heading-1;
+        @include button;
+    }
+    .stockSubmit:active {
+        text-shadow: 0px 2px rgba(77, 77, 77, 0.5);
+        box-shadow: 0px 0px rgba(77, 77, 77, 1);
+        transform: translateY(6px);
+    }
+    .stockSubmit:hover {
+        transform: scale(1.05);
+    }
+}
+
+.netWorth {
+    background: $beige;
+    width: 100%;
+    margin-top: 20px;
+    .netWorthFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+        h2 {
+            @include heading-1;
+            font-size: 4.5rem;
+            padding-top: 10px;
+        }
+        .netWorthAmount {
+            @include number-1;
+            font-size: 4rem;
+        }
+        .next {
+            @include button;
+            @include heading-1;
+            color: white;
+            width: 30%;
+        }
+        .next:active {
+            text-shadow: 0px 2px rgba(77, 77, 77, 0.5);
+            box-shadow: 0px 0px rgba(77, 77, 77, 1);
+            transform: translateY(6px);
+        }
+        .next:hover {
+            transform: scale(1.05);
+        }
+        .gameTime {
+            @include heading-2;
+            font-size: 3rem;
+            padding-top: 10px;
+        }
+
+    }
+}
+
+@media (max-width: 1300px) {
+    .mainGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto); 
+        grid-column-gap: 0px;
+        .news {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .banking {
+            grid-area: 2 / 1 / 3 / 2;
+            width: 55%;
+            margin: 0 auto;
+        }
+        .stockMarket {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+    }
+
+    .news h3 {
+        padding: 0 20px 20px 20px;
+        text-align: center;
+    }
+
+    .stockMarket{
+        .stockHeader {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 80px 20px 45px; 
+            h2 {
+                grid-area: 1 / 1 / 2 / 5;
+            }
+            .amount {
+                grid-area: 3 / 1 / 4 / 3;
+                min-width: 50%;
+                margin: 5px auto;
+            }
+            .stockAcc{
+                grid-area: 2 / 1 / 3 / 3; 
+            }
+            .stockChange{
+                grid-area: 3 / 3 / 4 / 4; 
+            }
+            .portCha{
+                grid-area: 2 / 3 / 3 / 5;
+            }
+            .stockChangePre{
+                grid-area: 3 / 4 / 4 / 5;  
+            }
+        }
+    }
+    .netWorth .netWorthFlex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+        padding: 20px 0;
+        h2 {
+            font-size: 3rem;
+        }
+        .netWorthAmount {
+            font-size: 2.5rem;
+        }
+        .gameTime {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .gameTitle h1 {
+        font-size: 3rem;
+    }
+    .mainGrid .banking {
+        width: 100%;
+    }
+
+    .stockMarket .stockHeader .amount {
+        font-size: 1.5rem;
+    }
+    .netWorth .netWorthFlex {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        h2, .netWorthAmount, .gameTime {
+            margin-bottom: 20px;
+        }
+        .next {
+            width: 70%;
+            margin-bottom: 20px;;
+        }
+    }
+}
